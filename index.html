@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal space · dark theme</title>
+   <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Form Section -->
+      <section class="form-section">
+        <h2 class="form-title">Tell me about yourself</h2>
+
+        <form id="userForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Your name"
+              class="form-input"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="number"
+              id="ageInput"
+              placeholder="Your age"
+              class="form-input"
+              required
+              min="1"
+              max="120"
+            />
+          </div>
+
+         
+          <button type="submit" class="form-button">save my info</button>
+        </form>
+      </section>
+
+      <!-- Results Area -->
+      <div class="results-area">
+        <div class="result-card">
+          <span class="result-label">Greetings</span>
+          <div id="greetingMessage" class="result-content placeholder">
+            [Your greeting will appear here]
+          </div>
+        </div>
+
+      <!-- Age -->
+        <div class="result-card">
+          <span class="result-label">Age in months</span>
+          <div id="ageMonthsDisplay" class="result-content placeholder">
+            [Your age in months will appear here]
+          </div>
+        </div>
+
+        <!-- Adult Content -->
+        <div class="result-card">
+          <span class="result-label">Adult content </span>
+          <div id="adultMessage" class="result-content placeholder">
+            [Age check message will appear here]
+          </div>
+        </div>
+
+        <!-- Motivational Quote -->
+        <div class="result-card">
+          <span class="result-label">Motivational Quote</span>
+          <div id="quoteContainer">
+            
+            <div class="quote-item">
+              <span class="quote-number">#1</span>
+              <span class="placeholder">[quote will appear here]</span>
+            </div>
+            <div class="quote-item">
+              <span class="quote-number">#2</span>
+              <span class="placeholder">[quote will appear here]</span>
+            </div>
+            <div class="quote-item">
+              <span class="quote-number">#3</span>
+              <span class="placeholder">[quote will appear here]</span>
+            </div>
+            <div class="quote-item">
+              <span class="quote-number">#4</span>
+              <span class="placeholder">[quote will appear here]</span>
+            </div>
+            <div class="quote-item">
+              <span class="quote-number">#5</span>
+              <span class="placeholder">[quote will appear here]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-note">
+        
+      </footer>
+    </div>
+
+    <!-- JavaScript will go here later -->
+    <script>
+      // When you're ready, we'll add:
+      // - localStorage get/set
+      // - form submission handler
+      // - age calculation function
+      // - if/else for adult content
+      // - loop for 5 quotes
+      // - template literals for greeting
+
+      console.log("✨ site ready for JavaScript ✨");
+    </script>
+  </body>
+</html>
